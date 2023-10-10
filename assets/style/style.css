@@ -1,20 +1,46 @@
 /* BASIC STYLES HERE */
-label{
+label {
   display: block;
 }
 
-input{
+input {
   width: 100%;
 }
-.car-creator{
+
+p {
+  margin-bottom: 0;
+}
+
+.car-creator {
   height: 10vh;
   width: 10vh;
   object-fit: cover;
 }
 
-.car-img{
+.car-img {
   height: 50vh;
   width: 50vw;
   object-fit: cover;
   object-position: center;
+}
+
+.house-card {
+  background-color: rgb(220, 220, 220);
+  border: 2px solid rgb(60, 60, 60);
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgb(60, 60, 60, 0.8);
+  display: flex;
+}
+
+.house-img {
+  height: 50vh;
+  width: 50vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.house-creator {
+  height: 10vh;
+  width: 10vh;
+  object-fit: cover;
 }

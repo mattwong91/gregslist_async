@@ -33,6 +33,7 @@
           <!-- NAVLINKS -->
           <a href="#/about" class="nav-link">About</a>
           <a href="#/cars" class="nav-link">Cars</a>
+          <a href="#/houses" class="nav-link">Houses</a>
         </div>
       </div>
       <div class="flex-grow-1 justify-content-end align-items-center d-flex" id="authstate"></div>
@@ -45,7 +46,64 @@
 
     <section id="router-view">
       <!-- primary viewport -->
+      <div class="container-fluid p-4">
 
+        <section id="houseForm" class="row justify-content-center">
+          <div class="col-6">
+            <form onsubmit="app.HousesController.createHouse(event)">
+              <input type="number" id="bedrooms" name="bedrooms" placeholder="# of bedrooms" required class="mb-2">
+              <input type="number" id="bathrooms" name="bathrooms" placeholder="# of bathrooms" required class="mb-2">
+              <input type="number" id="levels" name="levels" placeholder="# of floors" required class="mb-2">
+              <input type="url" id="imgUrl" name="imgUrl" placeholder="URL of image" maxlength="500" class="mb-2">
+              <input type="number" id="year" name="year" placeholder="Year built" min="1500" max="2023" required
+                class="mb-2">
+              <input type="number" id="price" name="price" placeholder="Price in ($)" required class="mb-2">
+
+              <textarea name="description" id="description" rows="10" maxlength="5000" class="w-100"></textarea>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="row">
+          <div class="col-12">
+            <h1>Houses</h1>
+          </div>
+        </section>
+
+        <section id="houseCards" class="row">
+          <!-- <div class="col-12 mb-3">
+            <div class="house-card">
+              <img
+                src="https://images.unsplash.com/photo-1623715056534-f8052f1dfd86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=943&q=80"
+                alt="House" class="house-img">
+
+              <div class="p-3">
+                <h2 class="mb-3">$${this.price}</h2>
+                <p>${this.bedrooms} Bedrooms</p>
+                <p>${this.bathrooms} Bathrooms</p>
+                <p>${this.levels} Levels</p>
+                <p>Year Built: ${this.year}</p>
+                <p>${this.description}</p>
+                <div class="d-flex align-items-center mt-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1623715056534-f8052f1dfd86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=943&q=80"
+                    alt="${this.creator.name}" class="img-fluid rounded-circle house-creator">
+                  <h4 class="ms-2">${this.creator.name}</h4>
+                </div>
+              </div>
+
+              <div class="text-end py-3">
+                <button class="btn btn-danger">Delete</button>
+              </div>
+            </div>
+
+          </div> -->
+
+      </div>
+    </section>
+
+    </div>
     </section>
 
 
